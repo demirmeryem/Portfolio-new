@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="contact-widget">
       <div class="contact-card">
         <div class="contact-group">
-          <p class="contact-title">chat with me</p>
-          <a href="mailto:meryemdemir.ui@gmail.com" class="contact-link">Email</a>
+          <p class="contact-title">benimle konuş</p>
+          <a href="mailto:meryemdemir.ui@gmail.com" class="contact-link">E-posta</a>
           <a href="#" class="contact-link">Instagram</a>
           <a href="https://www.linkedin.com/in/meryem-demir-96bb6a253/" target="_blank" class="contact-link">LinkedIn</a>
           <a href="https://dribbble.com/meryem2786" target="_blank" class="contact-link">Dribbble</a>
         </div>
-        <span class="contact-bottom">Contact</span>
+        <span class="contact-bottom">İletişim</span>
       </div>
     </div>
   `);
@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
     pageEl.insertAdjacentHTML("afterbegin", `
       <header class="header">
         <nav class="nav">
-          <a href="anasayfa.html" class="nav-link${activePage === "home" ? " active" : ""}">home</a>
-          <a href="about.html" class="nav-link${activePage === "about" ? " active" : ""}">about</a>
+          <a href="index.html" class="nav-link${activePage === "home" ? " active" : ""}">ana sayfa</a>
+          <a href="about.html" class="nav-link${activePage === "about" ? " active" : ""}">hakkımda</a>
         </nav>
       </header>
     `);
@@ -86,3 +86,16 @@ document.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("pageshow", () => {
   document.documentElement.style.opacity = "1";
 });
+
+// Foto galerisi — initPhotoGallery("elementId", ["foto1.jpg", ...])
+function initPhotoGallery(id, photos) {
+  let current = 0;
+  const card = document.getElementById(id);
+  if (!card) return;
+  const img = card.querySelector("img");
+  card.addEventListener("click", () => {
+    current = (current + 1) % photos.length;
+    img.style.opacity = "0";
+    setTimeout(() => { img.src = photos[current]; img.style.opacity = "1"; }, 200);
+  });
+}
