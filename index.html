@@ -14,30 +14,60 @@
   <body data-page="home">
     <div class="page">
       <section class="hero">
-        <p class="hero-name" data-tooltip="chat with me">Meryem Demir</p>
-        <p class="hero-desc" data-tooltip="chat with me">I'm a UI/UX designer focused on creating intentionally minimal, human-centered interfaces.</p>
-        <p class="hero-desc" data-tooltip="chat with me">Currently turning complex problems into simple, enjoyable experiences — where logic meets feeling.</p>
+        <p class="hero-name" data-tooltip="benimle konuş">Meryem Demir</p>
+        <p class="hero-desc" data-tooltip="benimle konuş">Kasıtlı olarak minimal, insan odaklı arayüzler tasarlayan bir UI/UX tasarımcısıyım.</p>
+        <p class="hero-desc" data-tooltip="benimle konuş">Karmaşık problemleri sade ve keyifli deneyimlere dönüştürüyorum — mantığın duyguyla buluştuğu yerde.</p>
       </section>
 
       <section class="works">
         <div class="works-grid reveal">
-          <a href="proje1.html" class="project-card">
-            <img src="photo/photo.png" class="card-img" alt="Project preview" />
+          <a href="proje1.html" class="project-card project-card--hero">
+            <img src="photo/Ansayfa/Real estate.svg" class="card-img card-img--contain" alt="Project preview" />
+            <img src="photo/Ansayfa/Portföy kartı.svg" class="card-overlay-img" id="portfolyoKarti" alt="" />
+            <img src="photo/Ansayfa/Badge 1.svg" class="card-overlay-img card-badge card-badge--1" id="badge1" alt="" />
+            <img src="photo/Ansayfa/Badge 2.svg" class="card-overlay-img card-badge card-badge--2" id="badge2" alt="" />
           </a>
-          <a href="proje2.html" class="project-card"></a>
-          <a href="proje3.html" class="project-card"></a>
-          <div class="project-card"></div>
-          <div class="project-card"></div>
-          <div class="project-card"></div>
+          <a href="https://www.behance.net/gallery/211342515/Online-Education-Platform-UI-UX" target="_blank" class="project-card project-card--swap">
+            <img src="photo/Ansayfa/Post 3.svg" class="card-img--contain card-img--80 swap-img swap-img--out" alt="Project preview" />
+            <img src="photo/Ansayfa/Task Progress.svg" class="card-img--contain card-img--80 swap-img swap-img--in" alt="Task Progress" />
+          </a>
+          <a href="https://www.behance.net/gallery/214849237/Yoga-Mobile-App" target="_blank" class="project-card project-card--lift">
+            <img src="photo/Ansayfa/Post 4.svg" class="card-img--top" alt="Project preview" />
+          </a>
+          <div class="project-cards-nested">
+            <div class="nested-top">
+              <div class="about-card about-card--photos project-card--nested" id="photoCardHome">
+              </div>
+              <div class="project-card project-card--nested home-toolkit">
+              </div>
+            </div>
+            <div class="project-card project-card--nested-wide">
+            </div>
+          </div>
         </div>
       </section>
 
       <footer class="case-footer case-footer--inline">
-        <a href="anasayfa.html" class="name">meryem</a>
+        <a href="index.html" class="name">meryem</a>
         <span class="copyright">©2026</span>
       </footer>
     </div>
     <script src="js/components.js"></script>
     <script src="script.js"></script>
+    <script>
+      setTimeout(() => {
+        document.getElementById("portfolyoKarti").classList.add("visible");
+        document.getElementById("badge1").classList.add("visible");
+        document.getElementById("badge2").classList.add("visible");
+      }, 300);
+
+      initPhotoGallery("photoCardHome", [
+        "photo/About/susam.jpeg",
+        "photo/About/IMG_7762_VSCO (1).jpeg",
+        "photo/About/WhatsApp Image 2026-05-13 at 13.49.06.jpeg",
+        "photo/About/WhatsApp Image 2026-05-13 at 14.32.53.jpeg",
+        "photo/About/WhatsApp Image 2026-05-13 at 16.43.03.jpeg"
+      ]);
+    </script>
   </body>
 </html>

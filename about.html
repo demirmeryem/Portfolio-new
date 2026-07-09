@@ -17,29 +17,29 @@
 
         <!-- SOL -->
         <div class="about-left">
-          <p class="about-greeting">It's a pleasure to meet you!</p>
+          <p class="about-greeting">Tanıştığımıza memnun oldum!</p>
 
           <div class="about-bio">
-            <p>I'm Meryem, a UI/UX designer based in Istanbul. I care deeply about the details — the kind that make an interface feel effortless rather than just functional. My approach is intentionally minimal: I remove what doesn't need to be there, and I refine what does.</p>
-            <p>I build from the ground up. Every project I take on starts with structure — a solid design system that keeps things consistent as the product grows. I enjoy the complexity of multi-module products and the challenge of making them feel simple to the people who use them.</p>
+            <p>Ben Meryem, İstanbul'da yaşayan bir UI/UX tasarımcısıyım. Bir arayüzü işlevsel olmaktan öte, zahmetsiz hissettiren detaylara özen gösteriyorum. Yaklaşımım kasıtlı olarak minimal: gereksiz olanı çıkarıyorum, gerekli olanı ise rafine ediyorum.</p>
+            <p>Her şeyi sıfırdan inşa ediyorum. Üstlendiğim her proje, ürün büyüdükçe tutarlılığı koruyan sağlam bir tasarım sistemiyle başlıyor. Çok modüllü ürünlerin karmaşıklığından ve onları kullanan insanlara sade hissettirme meydan okumasından keyif alıyorum.</p>
           </div>
 
           <div class="about-experience">
-            <h2 class="about-section-title">Experience</h2>
+            <h2 class="about-section-title">Deneyim</h2>
             <div class="exp-list">
               <div class="exp-item">
                 <div class="exp-main">
                   <span class="exp-company">Freelance</span>
                   <span class="exp-year">2022 — Present</span>
                 </div>
-                <span class="exp-role">Product Designer</span>
+                <span class="exp-role">Ürün Tasarımcısı</span>
               </div>
               <div class="exp-item">
                 <div class="exp-main">
                   <span class="exp-company">YapıSoft Yazılım A.Ş.</span>
                   <span class="exp-year">2023 — 2024</span>
                 </div>
-                <span class="exp-role">UI/UX Designer</span>
+                <span class="exp-role">UI/UX Tasarımcısı</span>
               </div>
             </div>
           </div>
@@ -52,13 +52,13 @@
             <!-- Fotoğraf kartı -->
             <div class="about-card about-card--photos" id="photoCard">
               <img class="about-card-img" src="photo/about/susam.jpeg" alt="" />
-              <span class="photo-hint">click to cycle</span>
+              <span class="photo-hint">tıkla</span>
             </div>
 
             <!-- Currently Listening -->
             <div class="about-card about-card--listening">
               <div class="listening-top">
-                <span class="listening-label">currently listening</span>
+                <span class="listening-label">şu an dinliyorum</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M9.5 8.5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v4c0 1.38-1.12 2.5-2.5 2.5S9.5 13.88 9.5 12.5v-4z" fill="currentColor" opacity=".3"/><path d="M8 14v1a4 4 0 0 0 8 0v-1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
               </div>
               <div class="listening-body">
@@ -99,7 +99,7 @@
               </div>
               <div class="toolkit-annotation">
                 <svg class="toolkit-arrow" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 8 C10 4, 20 2, 30 10 C38 16, 44 28, 52 32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/><path d="M46 36 L52 32 L48 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
-                <span class="toolkit-label">my toolkit</span>
+                <span class="toolkit-label">araçlarım</span>
               </div>
             </div>
 
@@ -120,25 +120,13 @@
     </div>
     <script src="js/components.js"></script>
     <script>
-      const photos = [
+      initPhotoGallery("photoCard", [
         "photo/about/susam.jpeg",
         "photo/about/IMG_7762_VSCO (1).jpeg",
         "photo/about/WhatsApp Image 2026-05-13 at 13.49.06.jpeg",
         "photo/about/WhatsApp Image 2026-05-13 at 14.32.53.jpeg",
         "photo/about/WhatsApp Image 2026-05-13 at 16.43.03.jpeg"
-      ];
-      let current = 0;
-      const card = document.getElementById("photoCard");
-      const img = card.querySelector(".about-card-img");
-
-      card.addEventListener("click", () => {
-        current = (current + 1) % photos.length;
-        img.style.opacity = "0";
-        setTimeout(() => {
-          img.src = photos[current];
-          img.style.opacity = "1";
-        }, 200);
-      });
+      ]);
     </script>
   </body>
 </html>
