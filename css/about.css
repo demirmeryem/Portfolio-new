@@ -207,9 +207,9 @@
 }
 
 .toolkit-title {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
-  color: var(--text-primary);
+  color: var(--text-secondary);
 }
 
 .about-card--toolkit {
@@ -227,16 +227,22 @@
 .toolkit-icons {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
+  background-color: #ebebeb;
+  border-radius: 16px;
+  padding: 10px 14px;
 }
 
 .toolkit-icon {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 
 /* LET'S TALK */
