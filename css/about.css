@@ -256,22 +256,12 @@
 .about-card--talk {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 8px;
   padding: 24px;
   aspect-ratio: unset;
-  min-height: 180px;
+  min-height: unset;
+  height: fit-content;
   grid-column: span 2;
-  position: relative;
-  overflow: hidden;
-}
-
-.about-card--talk::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse at 80% 50%, var(--bg-accent) 0%, transparent 65%);
-  opacity: 0.18;
-  pointer-events: none;
 }
 
 .talk-eyebrow {
@@ -292,21 +282,13 @@
 .talk-link {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text-primary);
+  gap: 4px;
+  font-size: 15px;
+  color: var(--brand-blue);
   text-decoration: none;
-  background-color: var(--bg-accent);
-  padding: 8px 16px;
-  border-radius: 100px;
-  width: fit-content;
-  transition: opacity 0.15s;
 }
 
-.talk-link:hover {
-  opacity: 0.85;
-}
+.talk-link:hover { text-decoration: underline; }
 
 .about-card-img {
   width: 100%;
