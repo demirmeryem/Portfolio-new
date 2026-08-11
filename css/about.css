@@ -195,8 +195,7 @@
 .about-card--location {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 20px;
   aspect-ratio: unset;
   min-height: 140px;
@@ -207,19 +206,28 @@
   font-size: 16px;
   font-weight: 400;
   color: var(--text-primary);
-  align-self: flex-start;
 }
 
 .location-body {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
+}
+
+.location-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .location-city {
   font-size: 16px;
   font-weight: 400;
+  color: var(--text-primary);
+}
+
+.location-time {
+  font-size: 14px;
   color: var(--text-secondary);
 }
 
