@@ -41,7 +41,7 @@
 .about-experience {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 12px;
 }
 
 .about-section-title {
