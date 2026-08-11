@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   min-height: 100svh;
-  padding: 140px clamp(24px, calc((100% - 1032px) / 2), 208px) 80px;
+  padding: 140px max(24px, calc((100% - 900px) / 2)) 80px;
   align-items: start;
 }
 
