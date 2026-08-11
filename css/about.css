@@ -202,22 +202,24 @@
 .about-card--toolkit {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 28px 24px;
-  gap: 20px;
+  padding: 24px;
+  gap: 16px;
   aspect-ratio: unset;
-  min-height: 160px;
+  min-height: unset;
+  height: fit-content;
   grid-column: span 2;
+}
+
+.toolkit-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-primary);
 }
 
 .toolkit-icons {
   display: flex;
   align-items: center;
-  gap: 10px;
-  background-color: var(--bg-primary);
-  border-radius: 14px;
-  padding: 12px 16px;
+  gap: 12px;
 }
 
 .toolkit-icon {
@@ -227,29 +229,6 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-}
-
-.toolkit-annotation {
-  display: flex;
-  align-items: flex-end;
-  gap: 6px;
-  color: var(--text-muted);
-  padding-left: 8px;
-}
-
-.toolkit-arrow {
-  width: 44px;
-  height: 28px;
-  transform: scaleX(-1);
-  margin-bottom: 2px;
-}
-
-.toolkit-label {
-  font-family: "Geist", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--text-secondary);
-  line-height: 1;
 }
 
 /* LET'S TALK */
