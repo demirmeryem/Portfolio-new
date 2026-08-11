@@ -149,19 +149,14 @@
 
 .location-body {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  align-items: center;
+  gap: 16px;
 }
 
 .location-city {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   color: var(--text-primary);
-}
-
-.location-time {
-  font-size: 15px;
-  color: var(--text-secondary);
 }
 
 /* TOOLKIT */

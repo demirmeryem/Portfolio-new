@@ -54,8 +54,14 @@
             <div class="about-card about-card--location">
               <span class="location-label">konum</span>
               <div class="location-body">
+                <svg id="analogClock" width="64" height="64" viewBox="0 0 64 64">
+                  <circle cx="32" cy="32" r="30" fill="none" stroke="var(--border-default)" stroke-width="2"/>
+                  <line id="hourHand"   x1="32" y1="32" x2="32" y2="14" stroke="var(--text-primary)"   stroke-width="2.5" stroke-linecap="round"/>
+                  <line id="minuteHand" x1="32" y1="32" x2="32" y2="8"  stroke="var(--text-primary)"   stroke-width="1.5" stroke-linecap="round"/>
+                  <line id="secondHand" x1="32" y1="32" x2="32" y2="6"  stroke="var(--bg-accent)"      stroke-width="1"   stroke-linecap="round"/>
+                  <circle cx="32" cy="32" r="2" fill="var(--text-primary)"/>
+                </svg>
                 <p class="location-city">Bursa, TR</p>
-                <p class="location-time" id="localTime"></p>
               </div>
             </div>
 
@@ -96,14 +102,25 @@
       </div>
     </div>
     <script>
-      function updateTime() {
-        const el = document.getElementById("localTime");
-        if (!el) return;
-        const now = new Date().toLocaleTimeString("tr-TR", { timeZone: "Europe/Istanbul", hour: "2-digit", minute: "2-digit" });
-        el.textContent = now;
+      function updateClock() {
+        const now = new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Istanbul" }));
+        const s = now.getSeconds(), m = now.getMinutes(), h = now.getHours() % 12;
+        const sDeg = s * 6 - 90;
+        const mDeg = m * 6 + s * 0.1 - 90;
+        const hDeg = h * 30 + m * 0.5 - 90;
+        function setHand(id, deg, len) {
+          const el = document.getElementById(id);
+          if (!el) return;
+          const rad = deg * Math.PI / 180;
+          el.setAttribute("x2", 32 + Math.cos(rad) * len);
+          el.setAttribute("y2", 32 + Math.sin(rad) * len);
+        }
+        setHand("hourHand",   hDeg, 16);
+        setHand("minuteHand", mDeg, 22);
+        setHand("secondHand", sDeg, 24);
       }
-      updateTime();
-      setInterval(updateTime, 1000);
+      updateClock();
+      setInterval(updateClock, 1000);
     </script>
     <script src="js/components.js"></script>
     <script>
