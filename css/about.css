@@ -210,12 +210,6 @@
 
 .location-body {
   display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.location-text {
-  display: flex;
   flex-direction: column;
   gap: 4px;
 }
