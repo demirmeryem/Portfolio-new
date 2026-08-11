@@ -79,7 +79,7 @@ a { text-decoration: none; }
 .hero {
   display: flex;
   flex-direction: column;
-  padding: 160px clamp(24px, calc((100% - 800px) / 2), 208px) 80px;
+  padding: 160px max(24px, calc((100% - 800px) / 2)) 80px;
 }
 
 .hero-content {
@@ -134,7 +134,7 @@ body.tooltip-active #cursor { opacity: 0; }
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 0 clamp(24px, calc((100% - 800px) / 2), 208px) 80px;
+  padding: 0 max(24px, calc((100% - 800px) / 2)) 80px;
 }
 
 .works-grid {
