@@ -228,9 +228,6 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  background-color: #e8e8e8;
-  border-radius: 22px;
-  padding: 10px;
 }
 
 .toolkit-icon {
