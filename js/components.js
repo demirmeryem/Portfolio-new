@@ -7,7 +7,7 @@ document.head.appendChild(lucideScript);
 // Fonts
 const fontLink = document.createElement("link");
 fontLink.rel = "stylesheet";
-fontLink.href = "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500&family=Libre+Baskerville:wght@400;700&family=Caveat:wght@600&display=swap";
+fontLink.href = "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500&family=Libre+Baskerville:wght@400;700&family=Caveat:wght@600&display=swap";
 document.head.prepend(fontLink);
 
 document.documentElement.style.opacity = "0";
