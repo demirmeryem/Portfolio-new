@@ -129,6 +129,68 @@
   white-space: nowrap;
 }
 
+/* INSTAGRAM */
+.about-card--instagram {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  aspect-ratio: unset;
+  min-height: 140px;
+  gap: 12px;
+}
+
+.ig-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ig-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #F9CE34, #EE2A7B, #6228D7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.ig-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ig-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.ig-handle {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.ig-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border: 1px solid var(--border-default);
+  border-radius: 100px;
+  padding: 6px 14px;
+  width: fit-content;
+  transition: color 0.15s;
+}
+.ig-btn:hover { color: var(--text-primary); }
+
 /* LOCATION */
 .about-card--location {
   display: flex;
