@@ -5,6 +5,7 @@
   let rafId = null;
 
   window.addEventListener("wheel", (e) => {
+    if (e.ctrlKey) return;
     e.preventDefault();
     target += e.deltaY * 0.75;
     target = Math.max(0, Math.min(target, document.body.scrollHeight - window.innerHeight));
