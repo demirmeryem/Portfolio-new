@@ -129,25 +129,17 @@
   white-space: nowrap;
 }
 
-/* LISTENING */
-.about-card--listening {
+/* LOCATION */
+.about-card--location {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
   aspect-ratio: unset;
-  min-height: 160px;
-  gap: 16px;
+  min-height: 140px;
 }
 
-.listening-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--text-muted);
-}
-
-.listening-label {
+.location-label {
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.07em;
@@ -155,50 +147,21 @@
   color: var(--text-muted);
 }
 
-.listening-body {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex: 1;
-}
-
-.listening-art {
-  width: 52px;
-  height: 52px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #c9b49a 0%, #8a7560 100%);
-  flex-shrink: 0;
-}
-
-.listening-info {
+.location-body {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 4px;
 }
 
-.listening-track {
-  font-size: 15px;
-  font-weight: 500;
+.location-city {
+  font-size: 22px;
+  font-weight: 400;
   color: var(--text-primary);
 }
 
-.listening-artist {
-  font-size: 13px;
+.location-time {
+  font-size: 15px;
   color: var(--text-secondary);
-}
-
-.listening-bar {
-  height: 3px;
-  background-color: var(--border-default);
-  border-radius: 100px;
-  overflow: hidden;
-}
-
-.listening-progress {
-  height: 100%;
-  width: 42%;
-  background-color: var(--text-primary);
-  border-radius: 100px;
 }
 
 /* TOOLKIT */

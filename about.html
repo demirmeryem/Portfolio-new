@@ -50,21 +50,12 @@
               <img class="about-card-img" src="photo/About/whatsapp-13-49.jpeg" alt="" />
             </div>
 
-            <!-- Currently Listening -->
-            <div class="about-card about-card--listening">
-              <div class="listening-top">
-                <span class="listening-label">şu an dinliyorum</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M9.5 8.5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v4c0 1.38-1.12 2.5-2.5 2.5S9.5 13.88 9.5 12.5v-4z" fill="currentColor" opacity=".3"/><path d="M8 14v1a4 4 0 0 0 8 0v-1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-              </div>
-              <div class="listening-body">
-                <div class="listening-art"></div>
-                <div class="listening-info">
-                  <p class="listening-track">OK Computer</p>
-                  <p class="listening-artist">Radiohead</p>
-                </div>
-              </div>
-              <div class="listening-bar">
-                <div class="listening-progress"></div>
+            <!-- Location -->
+            <div class="about-card about-card--location">
+              <span class="location-label">konum</span>
+              <div class="location-body">
+                <p class="location-city">Bursa, TR</p>
+                <p class="location-time" id="localTime"></p>
               </div>
             </div>
 
@@ -104,6 +95,16 @@
 
       </div>
     </div>
+    <script>
+      function updateTime() {
+        const el = document.getElementById("localTime");
+        if (!el) return;
+        const now = new Date().toLocaleTimeString("tr-TR", { timeZone: "Europe/Istanbul", hour: "2-digit", minute: "2-digit" });
+        el.textContent = now;
+      }
+      updateTime();
+      setInterval(updateTime, 1000);
+    </script>
     <script src="js/components.js"></script>
     <script>
       initPhotoGallery("photoCard", [
