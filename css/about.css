@@ -32,6 +32,12 @@
   color: var(--text-secondary);
 }
 
+.bio-link {
+  color: var(--brand-blue);
+  text-decoration: none;
+}
+.bio-link:hover { text-decoration: underline; }
+
 .about-experience {
   display: flex;
   flex-direction: column;
