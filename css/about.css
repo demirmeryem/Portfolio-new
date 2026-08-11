@@ -228,21 +228,21 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  background-color: #ebebeb;
-  border-radius: 16px;
-  padding: 8px 12px;
+  background-color: #e8e8e8;
+  border-radius: 22px;
+  padding: 10px;
 }
 
 .toolkit-icon {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
 }
 
 /* LET'S TALK */
