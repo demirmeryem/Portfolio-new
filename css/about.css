@@ -199,21 +199,29 @@
 }
 
 /* TOOLKIT */
-.about-card--toolkit {
+.toolkit-wrapper {
+  grid-column: span 2;
   display: flex;
   flex-direction: column;
-  padding: 24px;
-  gap: 16px;
-  aspect-ratio: unset;
-  min-height: unset;
-  height: fit-content;
-  grid-column: span 2;
+  gap: 12px;
 }
 
 .toolkit-title {
   font-size: 24px;
   font-weight: 400;
   color: var(--text-primary);
+}
+
+.about-card--toolkit {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 0;
+  aspect-ratio: unset;
+  min-height: unset;
+  height: fit-content;
+  grid-column: unset;
+  background-color: var(--bg-surface);
 }
 
 .toolkit-icons {
