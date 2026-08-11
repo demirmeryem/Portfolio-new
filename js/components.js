@@ -22,10 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="tooltip" id="tooltip"></div>
     <div class="contact-widget">
       <div class="contact-card">
-        <p class="contact-title">İletişim</p>
-        <a href="mailto:meryemdemir.ui@gmail.com" class="contact-link">meryemdemir.ui@gmail.com <i data-lucide="arrow-up-right"></i></a>
-        <a href="https://www.instagram.com/studio26home/" target="_blank" class="contact-link">Instagram <i data-lucide="arrow-up-right"></i></a>
-        <a href="https://www.linkedin.com/in/meryem-demir-96bb6a253/" target="_blank" class="contact-link">LinkedIn <i data-lucide="arrow-up-right"></i></a>
+        <div class="contact-group">
+          <p class="contact-title">Bana ulaşın</p>
+          <a href="mailto:meryemdemir.ui@gmail.com" class="contact-link">E-posta <i data-lucide="arrow-up-right"></i></a>
+          <a href="https://www.instagram.com/studio26home/" target="_blank" class="contact-link">Instagram <i data-lucide="arrow-up-right"></i></a>
+          <a href="https://www.linkedin.com/in/meryem-demir-96bb6a253/" target="_blank" class="contact-link">LinkedIn <i data-lucide="arrow-up-right"></i></a>
+        </div>
+        <span class="contact-bottom">İletişim</span>
       </div>
     </div>
   `);
