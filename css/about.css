@@ -133,30 +133,32 @@
 .about-card--location {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
   aspect-ratio: unset;
   min-height: 140px;
+  gap: 16px;
 }
 
 .location-label {
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: var(--text-muted);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-primary);
+  align-self: flex-start;
 }
 
 .location-body {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 
 .location-city {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
-  color: var(--text-primary);
+  color: var(--text-secondary);
 }
 
 /* TOOLKIT */
