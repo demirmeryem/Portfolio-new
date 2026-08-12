@@ -236,7 +236,7 @@ body.tooltip-active #cursor { opacity: 0; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 24px 0 28px;
+  padding: 0 24px 0 48px;
 }
 
 .card-toolkit-icons {
