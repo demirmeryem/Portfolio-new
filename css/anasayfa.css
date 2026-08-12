@@ -145,14 +145,9 @@ body.tooltip-active #cursor { opacity: 0; }
   align-items: start;
 }
 
-.works-grid > * {
-  min-width: 0;
-}
-
 .project-card {
   position: relative;
   overflow: hidden;
-  width: 100%;
   height: 400px;
   background-color: var(--bg-surface);
   border-radius: 16px;
@@ -186,7 +181,6 @@ body.tooltip-active #cursor { opacity: 0; }
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 100%;
   height: 100%;
 }
 
@@ -304,25 +298,7 @@ body.tooltip-active #cursor { opacity: 0; }
 .contact-bottom { font-size: 15px; color: #7A5500; margin-top: 8px; }
 
 /* RESPONSIVE */
-@media (max-width: 947px) {
-  .hero {
-    align-items: center;
-    text-align: center;
-  }
-
-  .hero-content {
-    padding: 0 24px;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-}
-
-@media (max-width: 551px) {
-  * { cursor: auto; }
-  #cursor, .tooltip { display: none; }
-
+@media (max-width: 700px) {
   .works-grid {
     grid-template-columns: 1fr;
   }
@@ -332,18 +308,11 @@ body.tooltip-active #cursor { opacity: 0; }
     padding-right: 20px;
   }
 
-  .project-card,
-  .project-cards-nested {
-    width: 100%;
-    min-width: unset;
-  }
-
   .project-card {
     height: 320px;
   }
 
   .nested-top {
-    grid-template-columns: 1fr 1fr;
     gap: 12px;
   }
 
@@ -363,6 +332,8 @@ body.tooltip-active #cursor { opacity: 0; }
   .hero {
     padding-left: 20px;
     padding-right: 20px;
+    align-items: center;
+    text-align: center;
   }
 
   .hero-content {
@@ -370,4 +341,21 @@ body.tooltip-active #cursor { opacity: 0; }
     max-width: 100%;
   }
 
+  * { cursor: auto; }
+  #cursor, .tooltip { display: none; }
+}
+
+@media (max-width: 947px) {
+  .hero {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding: 0 24px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 }
