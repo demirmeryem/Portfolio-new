@@ -241,15 +241,15 @@ body.tooltip-active #cursor { opacity: 0; }
 
 .card-toolkit-icons {
   display: flex;
-  gap: 6px;
+  gap: 10px;
   align-items: center;
 }
 
 .card-toolkit-icons img {
   transition: transform 0.2s ease;
 }
-.project-card--toolkit:hover .card-toolkit-icons img {
-  transform: scale(1.08);
+.card-toolkit-icons img:hover {
+  transform: scale(1.12);
 }
 
 .card-toolkit-label {
