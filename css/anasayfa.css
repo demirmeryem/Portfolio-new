@@ -221,7 +221,8 @@ body.tooltip-active #cursor { opacity: 0; }
   transition: opacity 0.2s ease;
 }
 
-.project-card--icon:hover .icon-arrow {
+.project-card--icon:hover .icon-arrow,
+.project-card:hover .icon-arrow {
   opacity: 1;
 }
 .project-card--nested-wide { height: auto; flex: 1; }
