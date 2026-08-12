@@ -304,7 +304,8 @@ body.tooltip-active #cursor { opacity: 0; }
 
   .hero {
     padding: 100px 20px 48px;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
 
   .hero-desc {
