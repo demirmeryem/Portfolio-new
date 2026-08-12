@@ -192,7 +192,38 @@ body.tooltip-active #cursor { opacity: 0; }
 }
 
 .project-card--nested { height: auto; }
-.project-card--icon { display: flex; align-items: center; justify-content: center; }
+.project-card--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-img {
+  transition: transform 0.2s ease;
+}
+
+.project-card--icon:hover .icon-img {
+  transform: scale(1.08);
+}
+
+.icon-arrow {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.project-card--icon:hover .icon-arrow {
+  opacity: 1;
+}
 .project-card--nested-wide { height: auto; flex: 1; }
 
 
