@@ -7,6 +7,7 @@
   --text-primary: #1a1a18;
   --text-secondary: #3a3a38;
   --text-muted: #9b9791;
+  --text-nav: #8a8a88;
   --brand-blue: #0066FF;
 }
 
@@ -69,7 +70,7 @@ a { text-decoration: none; }
 .nav-link {
   font-size: 15px;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: var(--text-nav);
   border-radius: 100px;
   transition: color 0.2s ease;
 }
@@ -159,6 +160,20 @@ body.tooltip-active #cursor { opacity: 0; }
   object-fit: contain;
   padding: 40px;
   display: block;
+}
+
+.project-card--overflow {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 32px;
+}
+
+.card-img-overflow {
+  width: 70%;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
 }
 
 /* CARD 4 — NESTED */
