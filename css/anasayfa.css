@@ -232,6 +232,48 @@ body.tooltip-active #cursor { opacity: 0; }
 }
 .project-card--nested-wide { height: auto; flex: 1; }
 
+.project-card--toolkit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+.card-toolkit-icons {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.card-toolkit-icons img {
+  transition: transform 0.2s ease;
+}
+.project-card--toolkit:hover .card-toolkit-icons img {
+  transform: scale(1.08);
+}
+
+.card-toolkit-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card-toolkit-label .icon-arrow {
+  position: static;
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+  background: rgba(0,0,0,0.08);
+  pointer-events: none;
+}
+
+.card-toolkit-text {
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
 
 /* CONTACT WIDGET */
 .contact-widget {
