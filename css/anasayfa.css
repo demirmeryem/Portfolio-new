@@ -338,7 +338,7 @@ body.tooltip-active #cursor { opacity: 0; }
   }
 
   .project-card--nested-wide {
-    height: 80px;
+    height: 110px;
     padding: 0 16px;
   }
 
