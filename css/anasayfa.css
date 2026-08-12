@@ -223,6 +223,7 @@ body.tooltip-active #cursor { opacity: 0; }
   justify-content: center;
   opacity: 0;
   transition: opacity 0.2s ease;
+  pointer-events: none;
 }
 
 .project-card--icon:hover .icon-arrow,
