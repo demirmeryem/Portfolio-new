@@ -338,6 +338,7 @@ body.tooltip-active #cursor { opacity: 0; }
   }
 
   .project-card--nested-wide {
+    flex: none;
     height: 110px;
     padding: 0 16px;
   }
