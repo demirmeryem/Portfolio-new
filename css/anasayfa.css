@@ -145,6 +145,10 @@ body.tooltip-active #cursor { opacity: 0; }
   align-items: start;
 }
 
+.works-grid > * {
+  min-width: 0;
+}
+
 .project-card {
   position: relative;
   overflow: hidden;
