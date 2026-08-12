@@ -198,12 +198,16 @@ body.tooltip-active #cursor { opacity: 0; }
   justify-content: center;
 }
 
-.icon-img {
+.icon-img,
+.card-img-padded,
+.card-img-overflow {
   transition: transform 0.2s ease;
 }
 
-.project-card--icon:hover .icon-img {
-  transform: scale(1.08);
+.project-card--icon:hover .icon-img,
+.project-card:hover .card-img-padded,
+.project-card:hover .card-img-overflow {
+  transform: scale(1.04);
 }
 
 .icon-arrow {
