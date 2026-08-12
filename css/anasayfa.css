@@ -298,10 +298,12 @@ body.tooltip-active #cursor { opacity: 0; }
 .contact-link i { width: 16px; height: 16px; flex-shrink: 0; }
 .contact-bottom { font-size: 15px; color: #7A5500; margin-top: 8px; }
 
-/* RESPONSIVE — mobile only */
+/* RESPONSIVE — mobile */
 @media (max-width: 720px) {
   * { cursor: auto; }
   #cursor, .tooltip, .contact-widget { display: none; }
+
+  body { overflow-x: hidden; }
 
   .hero {
     padding: 100px 20px 48px;
@@ -311,10 +313,16 @@ body.tooltip-active #cursor { opacity: 0; }
 
   .hero-desc {
     font-size: 16px;
+    max-width: 100%;
   }
 
   .works {
     padding: 0 16px 60px;
+    gap: 12px;
+  }
+
+  .works-grid {
+    grid-template-columns: 1fr;
     gap: 12px;
   }
 
@@ -326,7 +334,6 @@ body.tooltip-active #cursor { opacity: 0; }
     padding-top: 20px;
   }
 
-  /* nested: Behance + LinkedIn yan yana, Araçlarım altında */
   .project-cards-nested {
     gap: 12px;
   }
