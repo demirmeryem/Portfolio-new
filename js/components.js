@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     pageEl.insertAdjacentHTML("afterbegin", `
       <header class="header">
         <nav class="nav">
-          <a href="index.html" class="nav-link${activePage === "home" ? " active" : ""}">Meryem</a>
+          <a href="index.html" class="nav-link${activePage === "home" ? " active" : ""}">Anasayfa</a>
           <a href="about.html" class="nav-link${activePage === "about" ? " active" : ""}">Hakkımda</a>
         </nav>
       </header>
