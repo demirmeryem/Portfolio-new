@@ -263,6 +263,8 @@ body.tooltip-active #cursor { opacity: 0; }
   font-size: 22px;
   font-weight: 600;
   color: var(--text-primary);
+  transform: rotate(-6deg);
+  display: inline-block;
 }
 
 .card-toolkit-arrow {
