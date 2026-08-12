@@ -192,6 +192,7 @@ body.tooltip-active #cursor { opacity: 0; }
 }
 
 .project-card--nested { height: auto; }
+.project-card--icon { display: flex; align-items: center; justify-content: center; }
 .project-card--nested-wide { height: auto; flex: 1; }
 
 
