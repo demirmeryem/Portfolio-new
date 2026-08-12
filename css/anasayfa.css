@@ -349,6 +349,22 @@ body.tooltip-active #cursor { opacity: 0; }
     grid-template-columns: 1fr 1fr;
   }
 
+  .project-card--nested {
+    height: 140px;
+  }
+
+  .project-card--nested-wide {
+    height: 120px;
+  }
+
+  .card-toolkit-icons {
+    gap: 8px;
+  }
+
+  .card-toolkit-label {
+    gap: 4px;
+  }
+
   .hero {
     padding-left: 20px;
     padding-right: 20px;
