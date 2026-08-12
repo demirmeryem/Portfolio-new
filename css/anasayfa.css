@@ -343,26 +343,29 @@ body.tooltip-active #cursor { opacity: 0; }
   .project-cards-nested {
     width: 100%;
     min-width: unset;
+    height: auto;
+  }
+
+  .project-card {
+    height: 300px;
   }
 
   .nested-top {
     grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .project-cards-nested {
+    gap: 12px;
   }
 
   .project-card--nested {
-    height: 140px;
-  }
-
-  .project-card--nested-wide {
     height: 120px;
   }
 
-  .card-toolkit-icons {
-    gap: 8px;
-  }
-
-  .card-toolkit-label {
-    gap: 4px;
+  .project-card--nested-wide {
+    height: 90px;
+    padding: 0 16px;
   }
 
   .hero {
