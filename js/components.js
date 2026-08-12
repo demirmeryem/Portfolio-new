@@ -58,6 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.documentElement.style.opacity = "1";
 
+  // Toolkit ikonları
+  ["toolkit-about", "toolkit-home"].forEach(id => initToolkitIcons(id));
+
   // Page transitions
   document.querySelectorAll("a[href]").forEach((link) => {
     const href = link.getAttribute("href");
