@@ -270,8 +270,18 @@ body.tooltip-active #cursor { opacity: 0; }
 }
 
 .card-toolkit-text {
-  font-size: 15px;
+  font-family: "Caveat", cursive;
+  font-size: 18px;
+  font-weight: 600;
   color: var(--text-secondary);
+}
+
+.card-toolkit-arrow {
+  flex-shrink: 0;
+}
+
+.card-toolkit-label .icon-arrow {
+  display: none;
 }
 
 
