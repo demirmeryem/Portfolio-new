@@ -235,8 +235,8 @@ body.tooltip-active #cursor { opacity: 0; }
 .project-card--toolkit {
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: relative;
+  justify-content: space-between;
+  padding: 0 24px 0 28px;
 }
 
 .card-toolkit-icons {
@@ -253,9 +253,6 @@ body.tooltip-active #cursor { opacity: 0; }
 }
 
 .card-toolkit-label {
-  position: absolute;
-  bottom: 16px;
-  right: 16px;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -265,7 +262,7 @@ body.tooltip-active #cursor { opacity: 0; }
   font-family: "Caveat", cursive;
   font-size: 22px;
   font-weight: 600;
-  color: var(--text-muted);
+  color: var(--text-primary);
 }
 
 .card-toolkit-arrow {
