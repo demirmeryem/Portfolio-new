@@ -245,12 +245,6 @@ body.tooltip-active #cursor { opacity: 0; }
   align-items: center;
 }
 
-.card-toolkit-icons img {
-  transition: transform 0.2s ease;
-}
-.card-toolkit-icons img:hover {
-  transform: scale(1.12);
-}
 
 .card-toolkit-label {
   display: flex;

@@ -109,6 +109,21 @@ window.addEventListener("pageshow", () => {
   document.documentElement.style.opacity = "1";
 });
 
+// Toolkit ikonları
+function initToolkitIcons(containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  const icons = [
+    { src: "photo/my-toolkit/figma.svg",  alt: "Figma" },
+    { src: "photo/my-toolkit/framer.svg", alt: "Framer" },
+    { src: "photo/my-toolkit/ps.svg",     alt: "Photoshop" },
+    { src: "photo/my-toolkit/claude.svg", alt: "Claude" },
+  ];
+  container.innerHTML = icons.map(ic =>
+    `<img class="toolkit-icon-img" src="${ic.src}" width="46" height="46" alt="${ic.alt}" />`
+  ).join("");
+}
+
 // Foto galerisi — initPhotoGallery("elementId", ["foto1.jpg", ...])
 function initPhotoGallery(id, photos) {
   let current = 0;

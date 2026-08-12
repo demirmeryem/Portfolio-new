@@ -254,20 +254,7 @@
 .toolkit-icons {
   display: flex;
   align-items: center;
-  gap: 4px;
-}
-
-.toolkit-icon {
-  width: 46px;
-  height: 46px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  transition: transform 0.2s ease;
-}
-.toolkit-icon:hover {
-  transform: scale(1.1);
+  gap: 10px;
 }
 
 /* LET'S TALK */

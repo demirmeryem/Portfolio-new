@@ -2,3 +2,14 @@
 @import url('proje.css');
 @import url('about.css');
 
+/* Shared toolkit icons */
+.toolkit-icon-img {
+  width: 46px;
+  height: 46px;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+.toolkit-icon-img:hover {
+  transform: scale(1.12);
+}
+
